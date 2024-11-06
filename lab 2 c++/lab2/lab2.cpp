@@ -1,4 +1,8 @@
-﻿#include "treeBin.h"
+﻿#include <iostream>
+
+#include "treeBin.h"
+
+
 
 void Printik()
 {
