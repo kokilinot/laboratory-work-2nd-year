@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-
+// проверка
 #include "treeBin.h"
 
 
@@ -11,6 +11,7 @@ void Printik()
 
 int main()
 {
+	int k;
 	int a;
 	int b;
 	std::cout << "print root tree\n";
