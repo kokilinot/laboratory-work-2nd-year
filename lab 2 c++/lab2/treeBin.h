@@ -10,10 +10,10 @@ private:
 
 	void PuchHelperFunction(Node* header, Node* elem);
 public:
-	TreeBin(int a);
-	~TreeBin(){head->Delete();}
-	void Puch(int a);
-	void Print(){head->Print();}
-	void BFS();
-	void DFS() { head->DFS();  }
+	TreeBin(int a);//конструктор дерева
+	~TreeBin(){head->Delete();}//деструктор дерева
+	void Puch(int a); // добавленние элемента в дерево
+	void Print(){head->Print();} // вывод дерева как осортированный массив
+	void BFS(); //обход в ширину
+	void DFS() { head->DFS();  } // обход в глубину
 };
