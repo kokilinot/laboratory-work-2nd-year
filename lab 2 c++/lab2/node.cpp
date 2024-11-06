@@ -45,6 +45,20 @@ void Node::DFS()
 	std::cout << Date << "  ";
 }
 
+void Node::DFS(int &a)
+{
+	if (this->left != NULL)
+	{
+		a++;
+		left->DFS(a);
+	}
+	if (this -> right != NULL)
+	{
+		a++;
+		right->DFS(a);
+	}
+}
+
 Node Node::operator = (Node& node) //переопределение оператора
 {
 	this->Date = node.Date;

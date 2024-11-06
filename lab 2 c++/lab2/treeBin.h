@@ -5,15 +5,15 @@
 class TreeBin
 {
 private:
-	Node* head;
-
-
+	void count(Node* Deletetempl, Node* templ);
 	void PuchHelperFunction(Node* header, Node* elem);
 public:
+	Node* head;
 	TreeBin(int a);
 	~TreeBin(){head->Delete();}
 	void Puch(int a);
 	void Print(){head->Print();}
 	void BFS();
 	void DFS() { head->DFS();  }
+	void Delete(int a, Node* temp);//удаление листа
 };

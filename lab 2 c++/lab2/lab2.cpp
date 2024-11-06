@@ -6,7 +6,7 @@
 
 void Printik()
 {
-	std::cout << " 1 - Puch\n 2 - print\n 3 - exit\n 4 - BFS\n 5 - DFS\n";
+	std::cout << " 1 - Puch\n 2 - print\n 3 - exit\n 4 - BFS\n 5 - DFS\n 6-Delete\n";
 }
 
 int main()
@@ -37,6 +37,11 @@ int main()
 			break;
 		case 5:
 			Treex.DFS();
+			break;
+		case 6:
+			std::cout << "print number\n";
+			std::cin >> b;
+			Treex.Delete(b, Treex.head);
 			break;
 		default:
 			std::cout << "there is no such point\n";
