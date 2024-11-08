@@ -5,7 +5,8 @@ class TreeBin;
 
 class Node
 {
-
+public:
+	int get();
 private:
 	int Date;
 	Node* left;

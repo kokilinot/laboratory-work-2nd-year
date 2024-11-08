@@ -47,12 +47,12 @@ void Node::DFS()
 
 void Node::DFS(int &a)
 {
-	if (this->left != NULL)
+	if (left != NULL)
 	{
 		a++;
 		left->DFS(a);
 	}
-	if (this -> right != NULL)
+	if (right != NULL)
 	{
 		a++;
 		right->DFS(a);
@@ -65,4 +65,15 @@ Node Node::operator = (Node& node) //переопределение оператора
 	this->left = node.left;
 	this->right = node.right;
 	return *this;
+}
+int Node::get()
+{
+	if (this == nullptr)
+	{
+		return 0;
+	}
+	else
+	{
+		return this->Date;
+	}
 }

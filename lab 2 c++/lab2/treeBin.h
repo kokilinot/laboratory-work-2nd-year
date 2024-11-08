@@ -16,4 +16,5 @@ public:
 	void BFS();
 	void DFS() { head->DFS();  }
 	void Delete(int a, Node* temp);//удаление листа
+	Node* search(int a, Node* temp);
 };

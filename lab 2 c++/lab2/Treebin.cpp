@@ -125,6 +125,38 @@ void TreeBin::Delete(int a, Node* temp)
 		std::cout << "elements do not exist\n";
 		return;
 	}
+	if (a == head->Date)
+	{
+		int a=0;
+		int b=0;
+		head->left->DFS(a);
+		head->right->DFS(b);
+		if (a > b)
+		{
+			if (a != 0)
+			{
+				count(head, head->left);
+			}
+			else
+			{
+				head->left->right = head->right;
+				head = head->left;
+			}
+		}
+		if (b >= a)
+		{
+			if (b != 0)
+			{
+				count(head, head->left);
+			}
+			else
+			{
+				head->left->right = head->right;
+				head = head->left;
+			}
+		}
+		return;
+	}
 	if (temp->Date < a)// сравниваем с а если а больше, то начинаем проверку правого поддерева
 	{
 		if (temp->right != NULL) // проверяем существует ли правое поддерево если не существуе значит а не неайдено в дереве
@@ -166,5 +198,33 @@ void TreeBin::Delete(int a, Node* temp)
 	}
 }
 
+Node* TreeBin::search(int a, Node* temp)
+{	
+	if (temp == nullptr)
+	{
+		return nullptr;
+	}
+	if (temp->Date == a )
+	{
+		return temp;
+	}
+	else
+	{
+		if (temp->Date < a && temp->right != NULL)
+		{
+			temp = search(a, temp->right);
+		}
+		else if (temp->Date > a && temp->left != NULL)
+			{
+				temp = search(a, temp->left);
+			}
+		else if (temp->left == NULL && temp->right == NULL)
+			{
+				std::cout << "elements not search\n";
+				return nullptr;
+			}
+	}
+	
+}
 
 
