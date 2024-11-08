@@ -20,9 +20,7 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            panel1 = new Panel();
-            label1 = new Label();
-            panel1.SuspendLayout();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // button1
@@ -55,38 +53,25 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // panel1
+            // comboBox1
             // 
-            panel1.BackColor = SystemColors.ActiveCaption;
-            panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(488, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(250, 125);
-            panel1.TabIndex = 4;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(3, 0);
-            label1.Name = "label1";
-            label1.ForeColor = Color.White;
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = user.Name +"\n"+ user.calcAge(DateTime.Now).ToString();
+            comboBox1.FormattingEnabled = true;
+            comboBox1.ImeMode = ImeMode.Off;
+            comboBox1.Location = new Point(265, 78);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(205, 28);
+            comboBox1.TabIndex = 4;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(736, 451);
-            Controls.Add(panel1);
+            Controls.Add(comboBox1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -95,7 +80,6 @@
         private Button button2;
         private Button button3;
         private TreeView treeView1;
-        private Panel panel1;
-        private Label label1;
+        private ComboBox comboBox1;
     }
 }

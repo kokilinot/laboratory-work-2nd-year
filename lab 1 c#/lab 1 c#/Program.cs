@@ -8,16 +8,16 @@ namespace lab_1_c_
         DateTime Bithday { get; }
         public int calcAge(DateTime Thisdate);
     }
-    class Person : IPerson
+    public class Person : IPerson
     {
-        public int cardNumber;
+        private int cardNumber;
         private string name;
         private DateTime date;
 
         public Person()
         {
             cardNumber = 0;
-            name = "пользователь отсутствует";
+            name = " ";
             date = DateTime.MinValue;
         }
 
@@ -65,6 +65,18 @@ namespace lab_1_c_
                 else { return (thisDate.Year - date.Year - 1); }
             }
             else { return thisDate.Year - date.Year - 1; }
+        }
+
+        public string trans()
+        {
+            return name + " " + calcAge(DateTime.Now).ToString();
+        }
+
+        public void load(int numner, string names, DateTime Datethis)
+        {
+            this.cardNumber = numner;
+            this.name = names;
+            this.date = Datethis;
         }
     }
 
