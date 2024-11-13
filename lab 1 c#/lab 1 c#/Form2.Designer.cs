@@ -40,6 +40,7 @@
             textBox2 = new TextBox();
             dateTimePicker1 = new DateTimePicker();
             button1 = new Button();
+            button2 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel4.SuspendLayout();
@@ -125,6 +126,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(160, 27);
             textBox1.TabIndex = 3;
+            textBox1.Text = "name";
             // 
             // textBox2
             // 
@@ -132,6 +134,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(160, 27);
             textBox2.TabIndex = 4;
+            textBox2.Text = "0";
             // 
             // dateTimePicker1
             // 
@@ -144,13 +147,24 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(255, 128, 128);
-            button1.Location = new Point(139, 338);
+            button1.Location = new Point(81, 338);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 6;
-            button1.Text = "ввести";
+            button1.Text = "принять";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Lime;
+            button2.Location = new Point(203, 338);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 7;
+            button2.Text = "отменить";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Form2
             // 
@@ -158,6 +172,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(235, 190, 190);
             ClientSize = new Size(399, 379);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dateTimePicker1);
             Controls.Add(textBox2);
@@ -168,6 +183,7 @@
             Controls.Add(panel1);
             Name = "Form2";
             Text = "ввод значения";
+            KeyDown += Form2_KeyDown;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel4.ResumeLayout(false);
@@ -190,5 +206,6 @@
         private TextBox textBox2;
         private DateTimePicker dateTimePicker1;
         private Button button1;
+        private Button button2;
     }
 }

@@ -7,29 +7,46 @@ namespace lab_1_c_
     public partial class Form1 : Form
     {
         private List<Person> user;
-        private List<string> roles;
         public Person temp;
         public Form1()
         {
             user = new List<Person>();
-            roles = new List<string>();
-            Person temp = new Person(55555, "костя", DateTime.Now);
-            user.Add(temp);
-            roles.Add(temp.trans());
+            temp = new Person();
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 ff = new Form2(ref temp);
-            user.Add(temp);
+            Form2 ff = new Form2();
             ff.ShowDialog();
+            temp.load(Date.Cardnumber, Date.name, Date.dr);
+            user.Add(temp);
+            comboBox1.Items.Add(temp.trans());
+            comboBox1.SelectedIndex = 0;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 ff = new Form2(ref temp);
-            ff.ShowDialog();
+            if (comboBox1.SelectedIndex != -1) 
+            {
+                Date.examforchoice = true;
+                Date.Cardnumber = user[comboBox1.SelectedIndex].CardNumber;
+                Date.name = user[comboBox1.SelectedIndex].Name;
+                Date.dr = user[comboBox1.SelectedIndex].Bithday;
+                Form2 ff = new Form2();
+                ff.ShowDialog();
+                if (Date.exam == true)
+                {
+                    temp.load(Date.Cardnumber, Date.name, Date.dr);
+                    user[comboBox1.SelectedIndex] = temp;
+                    comboBox1.Items[comboBox1.SelectedIndex] = temp.trans();
+                    Date.exam = false;
+                }
+                Date.examforchoice = false;
+                Date.Cardnumber = 00000;
+                Date.name = "name";
+                Date.dr = DateTime.Now;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

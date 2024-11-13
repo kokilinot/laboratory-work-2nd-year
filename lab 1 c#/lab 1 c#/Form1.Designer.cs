@@ -21,6 +21,8 @@
             button2 = new Button();
             button3 = new Button();
             comboBox1 = new ComboBox();
+            panel1 = new Panel();
+            panel2 = new Panel();
             SuspendLayout();
             // 
             // button1
@@ -55,12 +57,32 @@
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = SystemColors.ActiveCaption;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.ForeColor = Color.Transparent;
             comboBox1.FormattingEnabled = true;
             comboBox1.ImeMode = ImeMode.Off;
-            comboBox1.Location = new Point(265, 78);
+            comboBox1.IntegralHeight = false;
+            comboBox1.Location = new Point(492, 53);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(205, 28);
             comboBox1.TabIndex = 4;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ControlDark;
+            panel1.Location = new Point(384, 43);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(322, 104);
+            panel1.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.AppWorkspace;
+            panel2.Location = new Point(236, 177);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(250, 189);
+            panel2.TabIndex = 6;
             // 
             // Form1
             // 
@@ -71,6 +93,8 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(panel1);
+            Controls.Add(panel2);
             Name = "Form1";
             ResumeLayout(false);
         }
@@ -79,7 +103,8 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private TreeView treeView1;
         private ComboBox comboBox1;
+        private Panel panel1;
+        private Panel panel2;
     }
 }

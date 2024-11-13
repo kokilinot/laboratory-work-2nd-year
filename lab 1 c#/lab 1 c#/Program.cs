@@ -57,7 +57,7 @@ namespace lab_1_c_
            
             if (thisDate.Month > date.Month)
             {
-                return thisDate.Year - date.Month;
+                return thisDate.Year - date.Year;
             }
             else if (thisDate.Month == date.Month)
             {
@@ -74,19 +74,29 @@ namespace lab_1_c_
 
         public void load(int numner, string names, DateTime Datethis)
         {
-            this.cardNumber = numner;
-            this.name = names;
-            this.date = Datethis;
+            cardNumber = numner;
+            name = names;
+            date = Datethis;
         }
+    }
+
+    public static class Date
+    {
+        public static bool examforchoice = false;
+        public static bool exam = false;
+        public static int Cardnumber= 00000;
+        public static DateTime dr = DateTime.Now;
+        public static string name = "name";
     }
 
    
     internal static class Program
     {
-
+        
         [STAThread]
         static void Main()
         {
+            
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }

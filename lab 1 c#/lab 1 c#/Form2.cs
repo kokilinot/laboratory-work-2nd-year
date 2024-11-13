@@ -12,17 +12,34 @@ namespace lab_1_c_
 {
     public partial class Form2 : Form
     {
-        public Person temp2;
-        public Form2(ref Person temp)
+
+        public Form2()
         {
-            temp2 = temp;
+            KeyPreview = true;
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {/*            temp2.load(Convert.ToInt32(textBox2.Text), Convert.ToString(textBox1.Text), dateTimePicker1.Value);
-            temp = temp2;*/
+        {
+            Date.Cardnumber = Convert.ToInt32(textBox2.Text);
+            Date.dr = dateTimePicker1.Value;
+            Date.name = textBox1.Text;
+            Date.exam = true;
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.Shift && e.KeyCode == Keys.L && Date.examforchoice == true) 
+            {
+                Form3 fe = new Form3();
+                fe.ShowDialog();
+            }
         }
     }
 }
