@@ -89,14 +89,19 @@ namespace lab_1_c_
         public static string name = "name";
     }
 
-   
+    public static class hash
+    {
+        public static string password= "oWWWiwqAhKBBrtib9A1YHw==";
+    }
+
     internal static class Program
     {
         
         [STAThread]
+
         static void Main()
         {
-            
+
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
@@ -104,5 +109,3 @@ namespace lab_1_c_
         
     }
 }
-
-

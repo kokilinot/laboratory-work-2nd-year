@@ -32,6 +32,7 @@
             label2 = new Label();
             textBox2 = new TextBox();
             comboBox1 = new ComboBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -54,28 +55,40 @@
             // 
             // textBox2
             // 
-            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Enabled = false;
             textBox2.Location = new Point(182, 106);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 20);
+            textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 3;
             // 
             // comboBox1
             // 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FlatStyle = FlatStyle.System;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "User", "Admin" });
             comboBox1.Location = new Point(182, 47);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(125, 28);
             comboBox1.TabIndex = 4;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(58, 171);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 5;
+            button1.Text = "принять";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(373, 223);
+            Controls.Add(button1);
             Controls.Add(comboBox1);
             Controls.Add(textBox2);
             Controls.Add(label2);
@@ -92,5 +105,6 @@
         private Label label2;
         private TextBox textBox2;
         private ComboBox comboBox1;
+        private Button button1;
     }
 }

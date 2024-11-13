@@ -135,6 +135,7 @@
             textBox2.Size = new Size(160, 27);
             textBox2.TabIndex = 4;
             textBox2.Text = "0";
+            textBox2.KeyPress += textBox2_KeyPress;
             // 
             // dateTimePicker1
             // 
@@ -203,8 +204,8 @@
         private Panel panel3;
         private Label label4;
         private TextBox textBox1;
-        private TextBox textBox2;
-        private DateTimePicker dateTimePicker1;
+        public TextBox textBox2;
+        public DateTimePicker dateTimePicker1;
         private Button button1;
         private Button button2;
     }

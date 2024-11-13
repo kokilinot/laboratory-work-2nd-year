@@ -19,10 +19,14 @@ namespace lab_1_c_
         {
             Form2 ff = new Form2();
             ff.ShowDialog();
-            temp.load(Date.Cardnumber, Date.name, Date.dr);
-            user.Add(temp);
-            comboBox1.Items.Add(temp.trans());
-            comboBox1.SelectedIndex = 0;
+            if (Date.exam == true)
+            {
+                temp.load(Date.Cardnumber, Date.name, Date.dr);
+                user.Add(temp);
+                comboBox1.Items.Add(temp.trans());
+                comboBox1.SelectedIndex = 0;
+                Date.exam = false;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,19 +55,19 @@ namespace lab_1_c_
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DialogResult resultat = MessageBox.Show
+            if ( comboBox1.SelectedIndex != -1)
+            { 
+                DialogResult resultat = MessageBox.Show
                 ("вы уверены?", "сообщение",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Information,
-                MessageBoxDefaultButton.Button1,
-                MessageBoxOptions.DefaultDesktopOnly);
-            if (resultat == DialogResult.Yes)
-            {
-
-            }
-            if (resultat == DialogResult.No)
-            {
-
+                MessageBoxDefaultButton.Button1
+                );
+                if (resultat == DialogResult.Yes)
+                {
+                    user.RemoveAt(comboBox1.SelectedIndex);
+                    comboBox1.Items.RemoveAt(comboBox1.SelectedIndex);
+                }
             }
         }
     }

@@ -1,0 +1,35 @@
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.exe
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.deps.json
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.runtimeconfig.json
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.dll
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.pdb
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab_1_c_.Form1.resources
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.csproj.GenerateResource.cache
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.AssemblyInfoInputs.cache
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.AssemblyInfo.cs
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.csproj.CoreCompileInputs.cache
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.dll
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\refint\lab 1 c#.dll
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.pdb
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.genruntimeconfig.cache
+C:\Users\Константин\source\repos\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\ref\lab 1 c#.dll
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.exe
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.deps.json
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.runtimeconfig.json
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.dll
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\bin\Debug\net6.0-windows\lab 1 c#.pdb
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab_1_c_.Form1.resources
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.csproj.GenerateResource.cache
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.AssemblyInfoInputs.cache
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.AssemblyInfo.cs
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.csproj.CoreCompileInputs.cache
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.dll
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\refint\lab 1 c#.dll
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.pdb
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab 1 c#.genruntimeconfig.cache
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\ref\lab 1 c#.dll
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab_1_c_.Properties.Resources.resources
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab_1_c_.Form2.resources
+C:\Users\Константин\source\repos\labs\laboratory-work-2nd-year\lab 1 c#\lab 1 c#\obj\Debug\net6.0-windows\lab_1_c_.Form3.resources
